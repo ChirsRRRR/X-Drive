@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bloom-filter-core" />
+        <module name="swagger2" />
+        <module name="lock-core" />
+        <module name="distribution" />
+        <module name="lock-local" />
+        <module name="lock-redis" />
+        <module name="storage-engine-core" />
+        <module name="storage-engine-local" />
+        <module name="core" />
+        <module name="schedule" />
+        <module name="lock-zookeeper" />
+        <module name="storage-engine-fastdfs" />
+        <module name="web" />
+        <module name="storage-engine-oss" />
+        <module name="stream-core" />
+        <module name="stream-rocketmq" />
+        <module name="cache-caffeine" />
+        <module name="cache-core" />
+        <module name="cache-redis" />
+        <module name="bloom-filter-local" />
+        <module name="mybatis-plus" />
+      </profile>
+      <profile name="Annotation profile for r-pan-parent" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/Desktop/springbootItems/SpringBoot_and_Vue3/maven/maven/repository/org/mapstruct/mapstruct-processor/1.5.2.Final/mapstruct-processor-1.5.2.Final.jar" />
+          <entry name="$USER_HOME$/Desktop/springbootItems/SpringBoot_and_Vue3/maven/maven/repository/org/mapstruct/mapstruct/1.5.2.Final/mapstruct-1.5.2.Final.jar" />
+          <entry name="$USER_HOME$/Desktop/springbootItems/SpringBoot_and_Vue3/maven/maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$USER_HOME$/Desktop/springbootItems/SpringBoot_and_Vue3/maven/maven/repository/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
+          <entry name="$USER_HOME$/Desktop/springbootItems/SpringBoot_and_Vue3/maven/maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.1.9.RELEASE/spring-boot-configuration-processor-2.1.9.RELEASE.jar" />
+        </processorPath>
+        <module name="server" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bloom-filter" options="" />
+      <module name="bloom-filter-core" options="-parameters" />
+      <module name="bloom-filter-local" options="-parameters" />
+      <module name="cache" options="" />
+      <module name="cache-caffeine" options="-parameters" />
+      <module name="cache-core" options="-parameters" />
+      <module name="cache-redis" options="-parameters" />
+      <module name="core" options="-parameters" />
+      <module name="distribution" options="-parameters" />
+      <module name="framework" options="" />
+      <module name="lock" options="" />
+      <module name="lock-core" options="-parameters" />
+      <module name="lock-local" options="-parameters" />
+      <module name="lock-redis" options="-parameters" />
+      <module name="lock-zookeeper" options="-parameters" />
+      <module name="mybatis-plus" options="-parameters" />
+      <module name="orm" options="" />
+      <module name="r-pan" options="" />
+      <module name="schedule" options="-parameters" />
+      <module name="server" options="-parameters" />
+      <module name="storage-engine" options="" />
+      <module name="storage-engine-core" options="-parameters" />
+      <module name="storage-engine-fastdfs" options="-parameters" />
+      <module name="storage-engine-local" options="-parameters" />
+      <module name="storage-engine-oss" options="-parameters" />
+      <module name="stream" options="" />
+      <module name="stream-core" options="-parameters" />
+      <module name="stream-rocketmq" options="-parameters" />
+      <module name="swagger2" options="-parameters" />
+      <module name="web" options="-parameters" />
+    </option>
+  </component>
+</project>

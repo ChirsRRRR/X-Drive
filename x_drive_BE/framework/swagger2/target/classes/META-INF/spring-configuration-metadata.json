@@ -1,0 +1,62 @@
+{
+  "groups": [
+    {
+      "name": "swagger2",
+      "type": "com.imooc.pan.swagger2.Swagger2ConfigurationProperties",
+      "sourceType": "com.imooc.pan.swagger2.Swagger2ConfigurationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "swagger2.base-package",
+      "type": "java.lang.String",
+      "sourceType": "com.imooc.pan.swagger2.Swagger2ConfigurationProperties"
+    },
+    {
+      "name": "swagger2.concat-email",
+      "type": "java.lang.String",
+      "sourceType": "com.imooc.pan.swagger2.Swagger2ConfigurationProperties"
+    },
+    {
+      "name": "swagger2.concatname",
+      "type": "java.lang.String",
+      "sourceType": "com.imooc.pan.swagger2.Swagger2ConfigurationProperties"
+    },
+    {
+      "name": "swagger2.concaturl",
+      "type": "java.lang.String",
+      "sourceType": "com.imooc.pan.swagger2.Swagger2ConfigurationProperties"
+    },
+    {
+      "name": "swagger2.description",
+      "type": "java.lang.String",
+      "sourceType": "com.imooc.pan.swagger2.Swagger2ConfigurationProperties"
+    },
+    {
+      "name": "swagger2.group-name",
+      "type": "java.lang.String",
+      "sourceType": "com.imooc.pan.swagger2.Swagger2ConfigurationProperties"
+    },
+    {
+      "name": "swagger2.show",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.imooc.pan.swagger2.Swagger2ConfigurationProperties"
+    },
+    {
+      "name": "swagger2.termsofserviceurl",
+      "type": "java.lang.String",
+      "sourceType": "com.imooc.pan.swagger2.Swagger2ConfigurationProperties"
+    },
+    {
+      "name": "swagger2.title",
+      "type": "java.lang.String",
+      "sourceType": "com.imooc.pan.swagger2.Swagger2ConfigurationProperties"
+    },
+    {
+      "name": "swagger2.version",
+      "type": "java.lang.String",
+      "sourceType": "com.imooc.pan.swagger2.Swagger2ConfigurationProperties"
+    }
+  ],
+  "hints": []
+}

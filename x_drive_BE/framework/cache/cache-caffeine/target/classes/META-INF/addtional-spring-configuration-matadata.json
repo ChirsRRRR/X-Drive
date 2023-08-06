@@ -1,0 +1,22 @@
+{
+  "properties": [
+    {
+      "name": "com.imooc.pan.cache.caffeine。init-cache-capacity",
+      "type": "java.lang.Integer",
+      "description": "是否展示接口文档",
+        "defaultValue": 256
+    },
+    {
+      "name": "com.imooc.pan.cache.caffeine.max-cache-capacity",
+      "type": "java.lang.Long",
+      "description": "Caffeine缓存最大容量",
+      "defaultValue": "10000L"
+    },
+    {
+      "name": "com.imooc.pan.cache.caffeine.allow-null-values",
+      "type": "java.lang.Boolean",
+      "description": "Caffeine缓存是否允许存放空值",
+      "defaultValue": "true"
+    }
+  ]
+}

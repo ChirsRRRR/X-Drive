@@ -1,0 +1,126 @@
+spring:
+  redis:
+    database: 1
+    host: 127.0.0.1
+  application:
+    name: r-pan-server
+  output:
+    ansi:
+      enabled: always
+  mvc:
+    servlet:
+      load-on-startup: 1
+  servlet:
+    multipart:
+      max-file-size: 3072MB
+      max-request-size: 3072MB
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/r_pan?characterEncoding=utf8&serverTimeZone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    stream:
+      rocketmq:
+        binder:
+          name-server: localhost:9876
+      bindings:
+          testInput:
+            destination: testTopic
+            group: testTopicGroup1
+          testOutput:
+            destination: testTopic
+          errorLogInput:
+            destination: errorLogTopic
+            group: errorLogGroup
+          deleteFileInput:
+            destination: deleteFileTopic
+            group: deleteFileGroup
+          fileRestoreInput:
+            destination: fileRestoreTopic
+            group: fileRestoreGroup
+          physicalDeleteFileInput:
+            destination: physicalDeleteFileTopic
+            group: physicalDeleteFileGroup
+          userSearchInput:
+            destination: userSearchTopic
+            group: userSearchGroup
+          errorLogOutput:
+            destination: errorLogTopic
+          deleteFileOutput:
+            destination: deleteFileTopic
+          fileRestoreOutput:
+            destination: fileRestoreTopic
+          physicalDeleteFileOutput:
+            destination: physicalDeleteFileTopic
+          userSearchOutput:
+            destination: userSearchTopic
+
+
+mybatis-plus:
+  mapper-locations: classpath:mappers/**/*.xml
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        exclude: env,beans
+
+swagger2:
+  show: true
+  group-name: ${spring.application.name}
+  base-package: com.imooc.pan
+  title: r-pan-server docs
+  description: r-pan-server docs
+  terms-of-service-url: http://127.0.0.1:${server.port}
+  contact-name: Jason Ran
+  contact-url: https://blog.rubinchu.com
+  contact-email: chirsran@gmail.com
+  version: 1.0
+
+  logging:
+    file: ${user.home}/logs/${spring.application.name}/${spring.application.name}.log
+    level:
+        root: INFO
+
+#com:
+#  imooc:
+#    pan:
+#      storage:
+#        engine:
+#          oss:
+#            bucket-name: x-drive-1
+#            endpoint: oss-cn-chengdu.aliyuncs.com
+#            access-key-id: LTAI5t7XuFEnBbWEpc11KFqk
+#            access-key-secret: SNWFV3VUrIhEb3Iw6fj4cHedUSp3RD
+#            auto-create-bucket: true
+#          fastdfs:
+#            connect-timeout: 600
+#            tracker-list:
+#              - 18.222.149.38:22122
+#            group: group1
+com:
+  imooc:
+    pan:
+#      storage:
+#        engine:
+#          oss:
+#            bucket-name: x-drive
+#            endpoint: oss-cn-chengdu.aliyuncs.com
+#            access-key-id: LTAI5t7XuFEnBbWEpc11KFqk
+#            access-key-secret: SNWFV3VUrIhEb3Iw6fj4cHedUSp3RD
+#            auto-create-bucket: true
+      server:
+        share-prefix: http://127.0.0.1:5173/share/
+      bloom:
+        filter:
+          local:
+            items:
+              - name: SHARE_SIMPLE_DETAIL
+                funnel-type-name: LONG
+                expected-insertions: 8000000
+                fpp: 0.01

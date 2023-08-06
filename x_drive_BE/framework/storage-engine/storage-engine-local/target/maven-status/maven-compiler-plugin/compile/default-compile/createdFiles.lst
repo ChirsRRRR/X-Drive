@@ -1,0 +1,4 @@
+com\imooc\pan\storage\engine\local\LocalStorageEngine.class
+com\imooc\pan\storage\engine\local\initializer\UploadFolderAndChunkFolderInitializer.class
+com\imooc\pan\storage\engine\local\config\LocalStorageEngineConfig.class
+META-INF\spring-configuration-metadata.json
